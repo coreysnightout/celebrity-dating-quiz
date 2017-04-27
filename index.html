@@ -15,39 +15,83 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-
           <form id="date">
-            <fieldset class="form-group">
+            <legend>Gender</legend>
+            <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input value="male" name="gender" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Male</span>
+            </label>
+            <label class="custom-control custom-radio">
+              <input value="female" name="gender" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Female</span>
+            </label>
+            <label class="custom-control custom-radio">
+              <input value="other" name="gender" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Other</span>
+            </label>
+          </div>
+            <!-- <fieldset class="form-group">
               <legend>Gender</legend>
               <div class="form-check">
                 <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadio" id="optionsRadio">
-                  Male
+                  <input type="radio" class="form-check-input" name="male" id="male">
+                  male
                 </label>
               </div>
               <div class="form-check">
                 <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadio" id="optionsRadio">
-                  Female
+                  <input type="radio" class="form-check-input" name="female" id="female">
+                  female
                 </label>
               </div>
-              <div class="form-check">
+            <div class="form-check">
                 <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadio" id="optionsRadio">
-                  Other
+                  <input type="radio" class="form-check-input" name="other" id="other">
+                  other
                 </label>
               </div>
-            </fieldset>
+            </fieldset> -->
             <div class="form-group">
               <legend>Age</legend>
-              <label for="formGroupExampleInput">Enter Your Age</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+              <label for="age">Enter Your Age</label>
+              <input type="text" class="form-control" id="age">
             </div>
+            <legend>Food</legend>
+            <select class="form-control" id="food">
+              <option value="kale">Artisanal Kale</option>
+              <option value="water">Water</option>
+            </select>
+            <button type="submit" class="btn">Submit</button>
+
           </form>
         </div> <!-- end col 4 -->
         <div class="col-md-8">
-
-        </div> <!-- end col 8 -->
+          <h3>A Pic of Your Pick</h3>
+          <div id="photo">
+            <div id="alec">
+              <img src="img/alec.jpg" alt="Alec Baldwin" />
+            </div> <!-- end col 8 -->
+            <div id="bill" >
+              <img src="img/bill.jpg" alt="Bill Murray" />
+            </div> <!-- end col 8 -->
+            <div id="elisha" >
+              <img src="img/elisha.jpg" alt="Elisha Cuthbert" />
+            </div> <!-- end col 8 1-->
+            <div id="rosie" >
+              <img src="img/rosie.jpg" alt="Rosie O'Donnel" />
+            </div> <!-- end col 8 1-->
+            <div id="shoenice" >
+              <img src="img/shoenice.jpg" alt="Shoenice" />
+            </div> <!-- end col 8 1-->
+            <div id="tina" >
+              <img src="img/tina.jpg" alt="Tina Fey" />
+            </div> <!-- end col 8 1-->
+          </div>  
+        </div>
       </div> <!-- end row -->
     </div> <!-- end container -->
 
