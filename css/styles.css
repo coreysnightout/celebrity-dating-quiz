@@ -9,3 +9,11 @@
 h3 {
   text-align: center;
 }
+
+.col-md-8 {
+  text-align: center;
+}
+
+img {
+  border-radius: 10px;
+}
