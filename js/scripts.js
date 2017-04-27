@@ -1,5 +1,6 @@
 $(function() {
   $("form#date").submit(function(event) {
+    $(".celeb").hide();
     var gender = ($('input[name=gender]:checked').val());
     var age = parseInt($("input#age").val());
     var food = $("select#food").val();
@@ -7,21 +8,21 @@ $(function() {
     console.log(age);
     console.log(food);
 
-
     if (gender = "male" && age > 50 && food === "kale") {
-      $("#alec").show();
+      $(".alec").show();
     } else if (gender = "male" && age <= 50 && food === "water") {
-      $("#bill").show();
+      $(".bill").show();
     } else if (gender = "other" && age < 50 && food === "kale") {
-      $("#rosie").show();
+      $(".rosie").show();
     } else if (gender = "female" && age > 50 && food === "water") {
-      $("#elisha").show();
+      $(".elisha").show();
     } else if (gender = "female" && age < 50 && food === "kale") {
-     $("#tina").show();
+     $(".tina").show();
    } else {
-     $("#shoenice").show();
+     $(".shoenice").show();
    }
 
    event.preventDefault();
   });
+
 });

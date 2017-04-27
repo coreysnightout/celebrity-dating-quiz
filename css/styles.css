@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-#alec, #bill, #elisha, #rosie, #shoenice, #tina {
+.celeb {
   display: none;
 }
 
